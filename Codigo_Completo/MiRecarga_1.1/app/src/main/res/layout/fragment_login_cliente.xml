@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/login_horizontal_margin"
+    android:paddingRight="@dimen/login_horizontal_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/titulo_principal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_label_inicie_sesion"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextoHello"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_sesion_gmail"
+        android:id="@+id/iniciar_sesion_gmail"
+        android:contentDescription="@string/img_login_google" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_sesion_twitter"
+        android:id="@+id/iniciar_sesion_twitter"
+        android:contentDescription="@string/img_login_twitter" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_sesion_facebook"
+        android:id="@+id/iniciar_sesion_facebook"
+        android:contentDescription="@string/img_login_facebook" />
+
+</LinearLayout>

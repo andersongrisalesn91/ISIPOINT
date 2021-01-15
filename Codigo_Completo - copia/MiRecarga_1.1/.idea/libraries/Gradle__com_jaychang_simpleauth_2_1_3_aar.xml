@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jaychang:simpleauth:2.1.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/87d18f17b1cb9f1c3ef173f627280505/jetified-simpleauth-2.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/87d18f17b1cb9f1c3ef173f627280505/jetified-simpleauth-2.1.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jaychang/simpleauth/2.1.3/fa43c2b29675965d3bb51e16865c2984f66e31/simpleauth-2.1.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jaychang/simpleauth/2.1.3/6a7907eebcb1896ff95510b25f4ec2df694100b9/simpleauth-2.1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

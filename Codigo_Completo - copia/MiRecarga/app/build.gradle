@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+check.dependsOn 'checkstyle', 'pmd'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "co.com.mirecarga.cliente"
+        minSdkVersion 19
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+        // URI para appauth que debe ser consistente con la configuración de WSO2 y el clientid
+        manifestPlaceholders = [
+                appAuthRedirectScheme: "${appAuthRedirectScheme}.cliente",
+                facebookAppId        : "1529652983786793",
+                googleWebClientId    : "265695473117-913pofsodm8lf2uei2vo0nmkl8rp9f6m.apps.googleusercontent.com",
+                twitterConsumerKey   : "UanjoOzz6qB3LdRt30osqpQFv",
+                twitterConsumerSecret: "6bB3FGdtKXB57ad8hn7UQ90x44nX3mVezr6gfTRsLnGs4CL0yu",
+                instagramClientId    : "76bedc2d27dd4e52841e576d4ce8cc79",
+                instagramClientSecret: "28d91eb23ab440beb55b3a3f112f4bb2",
+                instagramRedirectUrl : "https://localhost/oauth2redirect"
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    implementation "androidx.appcompat:appcompat:1.1.0"
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "com.google.android.material:material:1.1.0"
+    implementation "androidx.constraintlayout:constraintlayout:1.1.3"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation "androidx.test.ext:junit:1.1.1"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.2.0"
+    implementation "com.squareup.okio:okio:${okioVersion}"
+    // Retrofit permite acceso configurable al API de servicio
+    implementation "com.google.code.gson:gson:${gsonVersion}"
+    implementation("com.squareup.retrofit2:converter-gson:${retrofitVersion}") {
+        exclude(group: "com.google.code.gson", module: "gson")
+    }
+    implementation "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
+    implementation "io.reactivex.rxjava2:rxandroid:${rxandroidVersion}"
+    implementation "io.reactivex.rxjava2:rxjava:${rxjavaVersion}"
+    // Dependencias de net.openid:appauth.  Se debe incluir versión específica de customtabs
+    // porque dependendía de la versión anterior 25.3.1 y generaba problemas de compatibilidad
+    implementation "androidx.browser:browser:1.2.0"
+    implementation("net.openid:appauth:${appauthVersion}") {
+        exclude(group: "com.android.support", module: "customtabs")
+    }
+    // Framework de inyección de dependencias Dagger
+    implementation "com.google.dagger:dagger:${daggerVersion}"
+    implementation "com.google.dagger:dagger-android:${daggerVersion}"
+    implementation "com.google.dagger:dagger-android-support:${daggerVersion}"
+    annotationProcessor "com.google.dagger:dagger-android-processor:${daggerVersion}"
+    annotationProcessor "com.google.dagger:dagger-compiler:${daggerVersion}"
+    // Framework de inyección de campos y manejo de eventos
+    implementation "com.jakewharton:butterknife:${butterknifeVersion}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${butterknifeVersion}"
+    // Libreria para osmdroid (mapas)
+    // implementation "org.osmdroid:osmdroid-wms:${osmdroidVersion}"
+    implementation "org.osmdroid:osmdroid-android:${osmdroidVersion}"
+    implementation "com.github.MKergall:osmbonuspack:${osmbonuspackVersion}"
+    implementation "mil.nga.geopackage:geopackage-core:${geoPackageVersion}"
+
+    // Librería de autenticación con la máxima versión de facebook compatible
+    // implementation "com.facebook.android:facebook-android-sdk:${facebookVersion}"
+    /*
+    implementation("com.jaychang:simpleauth:${simpleAuthVersion}", {
+        exclude group: 'com.facebook.android', module: 'facebook-android-sdk'
+    })
+    */
+    implementation "com.jaychang:simpleauth:${simpleAuthVersion}"
+    implementation "com.jaychang:simpleauth-facebook:${simpleAuthVersion}"
+    implementation "com.jaychang:simpleauth-google:${simpleAuthVersion}"
+    implementation "com.jaychang:simpleauth-twitter:${simpleAuthVersion}"
+
+    implementation project(':core')
+}

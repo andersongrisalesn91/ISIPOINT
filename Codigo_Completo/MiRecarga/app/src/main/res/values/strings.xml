@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Mi Recarga Cliente</string>
+    <string name="titulo_principal">Mi Recarga Cliente</string>
+    <string name="empty"> </string>
+
+    <string name="navigation_drawer_open">Abrir</string>
+    <string name="navigation_drawer_close">Cerrar</string>
+
+    <string name="home_texto_hello">Hola</string>
+    <string name="navigation_inicio">Inicio</string>
+    <string name="navigation_salir">Cerrar sesión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="placas_almacenadas">Placas almacenadas</string>
+    <string name="editar">Editar</string>
+    <string name="ingresar_placa">Ingresar placa</string>
+    <string name="guardar_placa">Guardar placa</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="msg_editar_placa_error">Ha ocurrido un error actualizando la placa</string>
+    <string name="msg_editar_placa_ok">Placa editada satiscatoriamente</string>
+    <string name="msg_agregar_placa_ok">Placa agregada satiscatoriamente</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="msg_eliminar_placa_error">Ha ocurrido un error eliminando la placa</string>
+    <string name="msg_eliminar_placa_ok">Placa eliminada satiscatoriamente</string>
+
+    <string name="fecha_content_descripction">Seleccionar fecha</string>
+    <string name="buscar_content_descripction">Buscar</string>
+    <string name="titulo_busqueda">Resultados de la búsqueda</string>
+    <string name="transacciones_realizadas_nombre_producto">Nombre producto:</string>
+    <string name="transacciones_realizadas_saldo_balance">Saldo balance:</string>
+    <string name="transacciones_realizadas_nuevo_saldo_balance">Nuevo saldo balance:</string>
+    <string name="transacciones_realizadas_estado">Estado:</string>
+    <string name="transacciones_realizadas_fecha_creaci_n">Fecha creación:</string>
+    <string name="transacciones_realizadas_establecimiento">Establecimiento:</string>
+    <string name="codigo">Código</string>
+    <string name="saldo">Saldo</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="seleccione_metodo_pago">Seleccione un método de pago…</string>
+    <string name="seleccione_paquete">Seleccione un paquete…</string>
+    <string name="tu_saldo">Tu saldo: %s</string>
+    <string name="seleccione_zona">Seleccione una zona…</string>
+    <string name="titulo_inicio_pin">Iniciar uso de zona</string>
+    <string name="placa">Placa:</string>
+    <string name="zona">Zona:</string>
+    <string name="metodo_de_pago">Método de pago:</string>
+    <string name="msg_inicio_uso_pin_exitoso">La venta fue registrada</string>
+    <string name="msg_inicio_uso_pin_auditoria">Se realizó el pago del parqueadero de la zona %s para la placa %s con el PIN %s</string>
+    <string name="minutos_disponibles">Minutos disponibles:</string>
+    <string name="valor_minuto">Valor minuto:</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="titulo_tus_tarjetas">Tus tarjetas</string>
+    <string name="titulo_tus_tarjetas_en_uso">Tus tarjetas en uso</string>
+    <string name="titulo_transacciones_por_pin">Transacciones de tu pin: %s</string>
+    <string name="login_label_inicie_sesion">Inicie sesión con:</string>
+    <string name="minutos_usados">Minutos usados:</string>
+    <string name="valor_cobrado">Valor cobrado:</string>
+    <string name="saldo_disponible">Saldo disponible:</string>
+    <string name="titulo_finalizar_pin">Uso pin finalizado</string>
+    <string name="descripcion_metodo_pago">Pin número %s</string>
+    <string name="msg_finalizar_uso_pin_exitoso">Se ha finalizado correctamente el Pin %s</string>
+    <string name="msg_finalizar_uso_pin_auditoria">Se ha finalizado correctamente el Pin %s</string>
+    <string name="mensaje">Mensaje:</string>
+    <string name="usuario">Usuario:</string>
+    <string name="medio">Medio:</string>
+    <string name="fecha_transacci_n">Fecha transacción:</string>
+    <string name="recargar">Recargar saldo</string>
+    <string name="paquete">Paquete:</string>
+    <string name="comprar">Comprar</string>
+    <string name="titulo_compra_paquete">Compra de paquetes</string>
+    <string name="msg_compra_paquete_exitoso">Compra de la placa %s exitosa</string>
+    <string name="msg_compra_paquete_auditoria">Se realizó la compra del paquete %s para la zona %s para la placa %s con el PIN %s</string>
+    <string name="img_transacciones">Transacciones</string>
+    <string name="img_usar_tarjeta">Usar tarjeta</string>
+    <string name="img_comprar_paquete">Comprar paquete</string>
+    <string name="img_pausar_uso_de_tarjeta">Pausar uso de tarjeta</string>
+    <string name="img_login_google">Ingresar con Google</string>
+    <string name="img_login_twitter">Ingresar con Twitter</string>
+    <string name="img_login_facebook">Ingresar con Facebook</string>
+    <string name="operacion_cancelada">Operación cancelada</string>
+    <string name="todos_estados">Todos los estados</string>
+    <string name="todos_tipos_celda">Todos los tipos de celda</string>
+    <string name="opciones_de_mapa">Opciones de Mapa</string>
+    <string name="filtrar">Filtrar</string>
+    <string name="volver_al_inicio">Inicio</string>
+    <string name="msg_venta_paquete_exitoso">El PIN para la placa %s se ha generado satisfactoriamente</string>
+    <string name="seleccione_tipo_vehiculo">Seleccione un tipo de vehículo…</string>
+    <string name="seleccione_tarifa">Seleccione la tarifa…</string>
+    <string name="msg_venta_paquete_auditoria">Se realizó el pago del parqueadero de la zona %s del %s para la placa %s por un valor de %s</string>
+    <string name="seleccione_departamento">Seleccione un departamento…</string>
+    <string name="seleccione_municipio">Seleccione un municipio…</string>
+    <string name="celda_ocupada">Esta celda se encuentra por el momento ocupada</string>
+
+</resources>

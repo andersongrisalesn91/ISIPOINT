@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "741243749854",
+    "firebase_url": "https://mirecarga-3022c.firebaseio.com",
+    "project_id": "mirecarga-3022c",
+    "storage_bucket": "mirecarga-3022c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741243749854:android:858dd44f1b50728f25c94f",
+        "android_client_info": {
+          "package_name": "co.com.mirecarga.vendedor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741243749854-0km464d8q37em4sfa5namk234c7vj61r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.com.mirecarga.vendedor",
+            "certificate_hash": "9375ba3cf9662afb91dcad5accd50a33dadd8280"
+          }
+        },
+        {
+          "client_id": "741243749854-r1o5b9jgqejphik8np5nof8okva0a80e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGW2Y7YiyInvUELOXF35yC1TW2iLOaXVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741243749854-r1o5b9jgqejphik8np5nof8okva0a80e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

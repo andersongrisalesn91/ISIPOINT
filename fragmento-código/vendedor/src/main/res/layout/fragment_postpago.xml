@@ -1,0 +1,121 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/confirmar_saldo"
+            style="@style/TituloFragmento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hora_inicial"
+                style="@style/text_view_default"/>
+
+            <TextView
+                android:id="@+id/hora_entrada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_view_read_only"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hora_final"
+                style="@style/text_view_default"/>
+
+            <TextView
+                android:id="@+id/hora_salida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_view_read_only"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                style="@style/text_view_default"/>
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_view_read_only"/>
+
+            <LinearLayout
+                android:id="@+id/contenedor_boton_venta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancelar_venta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/cancelar"
+                    style="@style/BotonNormal"/>
+
+                <Button
+                    android:id="@+id/confirmar_venta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/pagar"
+                    style="@style/BotonNormal"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/contenedor_boton_impresion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/volver_inicio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/volver_al_inicio"
+                    style="@style/BotonNormal"/>
+
+                <Button
+                    android:id="@+id/realizar_otra_venta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/realizar_otra_venta"
+                    style="@style/BotonNormal"/>
+
+                <Button
+                    android:id="@+id/imprimir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="@string/imprimir"
+                    style="@style/BotonNormal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

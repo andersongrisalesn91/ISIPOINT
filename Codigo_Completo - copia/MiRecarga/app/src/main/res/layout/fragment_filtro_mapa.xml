@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TituloFragmento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/opciones_de_mapa"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/ContenedorFormulario"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/estado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinner_default"/>
+
+        <Spinner
+            android:id="@+id/tipo_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/spinner_default"/>
+
+        <Button
+            android:id="@+id/filtrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/BotonNormal"
+            android:text="@string/filtrar" />
+    </LinearLayout>
+
+</LinearLayout>

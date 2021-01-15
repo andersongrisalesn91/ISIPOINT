@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jaychang:simpleauth-facebook:2.1.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9bfa03bfbfcf3d1c7282038466b270e/jetified-simpleauth-facebook-2.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9bfa03bfbfcf3d1c7282038466b270e/jetified-simpleauth-facebook-2.1.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jaychang/simpleauth-facebook/2.1.3/6b61584139d65453b78b98ce9260b73ad84a2e5d/simpleauth-facebook-2.1.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jaychang/simpleauth-facebook/2.1.3/bff7c3b163f48fa0aea057b7e2182fd43fbbf4fb/simpleauth-facebook-2.1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

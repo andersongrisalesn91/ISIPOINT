@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#33c6cb</color>
+    <color name="colorPrimaryDark">#289ea2</color>
+    <color name="colorPrimaryDark2">#303F9F</color>
+    <color name="colorAccent">#B0353F</color>
+    <color name="colorAccent1">#AE5237</color>
+    <color name="colorAccent2">#E66233</color>
+    <color name="colorTitle">#fff</color>
+    <color name="colorTextCard">#000</color>
+    <color name="colorSecundario">#B0353F</color>
+    <color name="colorWarning">#ffeeba</color>
+    <color name="textoBoton">#fff</color>
+    <color name="recycler_view_item_swipe_right_background">#FF0000</color>
+    <color name="recycler_view_item_swipe_left_background">#00BB00</color>
+</resources>

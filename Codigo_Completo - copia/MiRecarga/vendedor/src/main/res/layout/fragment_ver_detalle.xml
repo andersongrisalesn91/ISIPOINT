@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TituloFragmento"
+            android:text="@string/ver_detalle_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/ContenedorFormulario"
+            android:orientation="vertical">
+
+            <TextView android:labelFor="@id/pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_pin"
+                style="@style/text_view_default"/>
+
+            <TextView
+                android:id="@+id/pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_view_read_only"/>
+
+            <TextView android:labelFor="@id/fechaInicial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_fecha_inicio"
+                style="@style/text_view_default"/>
+
+            <TextView
+                android:id="@+id/fechaInicial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_view_read_only"/>
+
+            <TextView android:labelFor="@id/fechaFinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_fecha_fin"
+                style="@style/text_view_default"/>
+
+            <TextView
+                android:id="@+id/fechaFinal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_view_read_only"/>
+
+            <TextView android:labelFor="@id/saldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_saldo"
+                style="@style/text_view_default"/>
+
+            <TextView
+                android:id="@+id/saldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/text_view_read_only"/>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/img_qr"
+                android:contentDescription="@string/empty" />
+
+            <Button
+                android:id="@+id/imprimir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/imprimir" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

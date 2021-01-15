@@ -1,0 +1,56 @@
+{
+  "menu": [
+    {
+      "nombre": "Cliente",
+        "items": [
+          {
+            "id": 1,
+            "nombre": "Saldo",
+            "descripcion": "Descripción saldo",
+            "icono": "ico_menu_recarga_saldo",
+            "clase": "co.com.mirecarga.cliente.recarga.RecargaSaldoFragment"
+          },
+          {
+            "id": 2,
+            "nombre": "Administración placas",
+            "descripcion": "Descripción Administración placas",
+            "icono": "ico_menu_cliente_placa",
+            "clase": "co.com.mirecarga.cliente.placaadmin.PlacaAdminFragment"
+          },
+          {
+            "id": 3,
+            "nombre": "Tarjetas en uso",
+            "descripcion": "Descripción Lista de tarjetas en uso",
+            "icono": "ico_menu_cliente_tarjetas_en_uso",
+            "clase": "co.com.mirecarga.cliente.tarjetas.ListaTarjetasEnUsoFragment"
+          },
+          {
+            "id": 4,
+            "nombre": "Lista de tarjetas",
+            "descripcion": "Descripción Lista de tarjetas",
+            "icono": "ico_menu_cliente_tarjetas",
+            "clase": "co.com.mirecarga.cliente.tarjetas.ListaTarjetasFragment"
+          },
+          {
+            "id": 9,
+            "nombre": "Mapa",
+            "descripcion": "Descripción Mapa",
+            "icono": "ico_menu_mapa",
+            "clase": "co.com.mirecarga.cliente.mapa.MapaClienteFragment"
+          }
+      ]
+    },
+    {
+      "nombre": "Consultar",
+      "items": [
+        {
+          "id": 5,
+          "nombre": "Transacciones realizadas",
+          "descripcion": "Descripción Transacciones realizadas",
+          "icono": "ico_menu_cliente_transacciones_realizadas",
+          "clase": "co.com.mirecarga.cliente.reportes.TransaccionesRealizadasFragment"
+        }
+      ]
+    }
+  ]
+}

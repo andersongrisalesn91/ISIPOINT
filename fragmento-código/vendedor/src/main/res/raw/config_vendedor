@@ -1,0 +1,45 @@
+{
+  "wso2": {
+    "clientId": "HY5nTX97vYdaEKc75uRkZlQLYp4a",
+    "redirectUri": "co.com.mirecarga:/oauth2redirect",
+    "authorizationScope": "openid",
+    "authorizationEndpointUri": "https://sso.mirecarga.co:9443/oauth2/authorize",
+    "tokenEndpointUri": "https://sso.mirecarga.co:9443/oauth2/token",
+    "httpsRequired": false,
+    "clientSecret": "oclOBYxuUsSxjMLTBUeC7ILQVcEa",
+    "apiBaseUri": "https://sso.mirecarga.co:8244",
+    "apiUri": "/ventas/api/v1.0.0/",
+    "segundosCacheEnLinea": 5,
+    "horasCacheFueraDeLinea": 24,
+    "maxCacheSize": 10000000
+  },
+  "productos": {
+    "idRecargaEnLinea": 1,
+    "idPinTransito": 9
+  },
+  "recargaEnLinea": {
+    "minimo": 1,
+    "maximo": 150000
+  },
+  "metodosPago": [
+    {
+      "id": 1,
+      "descripcion": "Efectivo"
+    }, {
+      "id": 2,
+      "descripcion": "PIN"
+    }
+  ],
+  "idClienteAnonimo": 2169,
+  "mapa": {
+    "urlCartografia": "http://mapas.mirecarga.co:8088/geoserver/mr_test/",
+    "urlZER": "https://sso.mirecarga.co:8244/zer/api/v1.0.0/",
+    "tokenTemporalZER": "f3d76b4f-4d66-3e6c-9329-936b725eb99c",
+    "idPaisDefecto": 1,
+    "schemaZonasKML": "vendedores_parqueaderos_y_zonas_poi",
+    "schemaCeldasKML": "vendedores_celdas",
+    "maxZoomLevel": 24,
+    "minZoomLevelCeldas": 18.5,
+    "defaultZoomLevel": 15
+  }
+}

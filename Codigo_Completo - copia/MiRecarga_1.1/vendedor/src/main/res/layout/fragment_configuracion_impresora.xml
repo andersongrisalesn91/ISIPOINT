@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical">
+
+    <RadioGroup android:id="@+id/tipo_impresora"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton android:id="@+id/tipo_impresora_local"
+            style="@style/radioButton"
+            android:text="@string/impresora_local" />
+
+        <RadioButton android:id="@+id/tipo_impresora_bluetooth"
+            style="@style/radioButton"
+            android:text="@string/impresora_bluetooth" />
+
+        <RadioButton android:id="@+id/tipo_impresora_zebra"
+            style="@style/radioButton"
+            android:text="@string/impresora_zebra" />
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/contenedor_bluetooth_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        style="@style/ContenedorFormulario">
+        <EditText
+            android:id="@+id/nombre_impresora_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:inputType="text"
+            android:hint="@string/nombre"/>
+        <Button
+            android:id="@+id/guardar_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/contenedor_zebra_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        style="@style/ContenedorFormulario">
+        <EditText
+            android:id="@+id/mac_impresora_zebra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="17"
+            android:inputType="text"
+            android:hint="@string/bluetooth_mac_address"/>
+        <Button
+            android:id="@+id/guardar_zebra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        style="@style/ContenedorFormulario">
+        <Button
+            android:id="@+id/probar_impresora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/probar_impresora" />
+    </LinearLayout>
+</LinearLayout>

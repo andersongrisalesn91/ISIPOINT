@@ -1,0 +1,41 @@
+{
+	"evt": 2,
+	"ts": 123456789012,
+	"idp": 1,
+	"idd": 3,
+	"idm": 149,
+	"pyzid": 1,
+	"cid": 35,
+	"payload": [
+		{
+			"id": 203,
+			"parqueaderoyzona": "Usaquen 1",
+			"vendedor": "TERRACEL 1",
+			"idtipodevehiculo": 1,
+			"placa": "cxp937",
+			"idcelda": 35,
+			"fechahoraentrada": "2019-12-13 17:27:30",
+			"fechahoravigencia": "2019-12-13 17:42:30",
+			"hms": "-4:-49:-34",
+			"dias": -182,
+			"horas": -4,
+			"minutos": -49,
+			"segundos": -34,
+			"fechahorasalida": null,
+			"pagado": false,
+			"pagopendiente": false,
+			"detalles": [
+				{
+					"id": 274,
+					"idtarifa": 2,
+					"costoxminuto": 50,
+					"fechahoraentrada": "2019-12-13 17:27:30",
+					"fechahorasalida": null,
+					"cerrado": false,
+					"pagado": true,
+					"costototal": 750
+				}
+			]
+		}
+	]
+}

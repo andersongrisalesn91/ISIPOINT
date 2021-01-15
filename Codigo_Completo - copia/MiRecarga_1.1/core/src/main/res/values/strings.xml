@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Comunes</string>
+    <string name="msg_error_inesperado">Ocurrió un error inesperado en la comunicación.  Por favor intente de nuevo.</string>
+    <string name="buscar_consultas">Buscar…</string>
+</resources>

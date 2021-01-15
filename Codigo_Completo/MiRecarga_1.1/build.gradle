@@ -1,0 +1,119 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.72'
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "https://repo.eclipse.org/content/repositories/paho-snapshots/"
+        }
+    }
+    dependencies {
+        classpath "com.github.ben-manes:gradle-versions-plugin:0.20.0"
+        classpath 'com.android.tools.build:gradle:3.6.4'
+        classpath 'com.google.gms:google-services:4.3.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.72"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    group 'co.com.mirecarga'
+    version '2.0.0'
+/*  Para mostar causas de warnings "uses or overrides a deprecated API" principalmente porque el mínimo API Android es 19 y para solucionar deprecated se requiere 21
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+    }
+*/
+    repositories {
+        google()
+        jcenter()
+        // Repositorio para SimpleAuth
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+subprojects {
+    apply plugin: 'checkstyle'
+    dependencies {
+        checkstyle 'com.puppycrawl.tools:checkstyle:8.12'
+    }
+    task checkstyle(type: Checkstyle, group: 'Verification', description: 'Runs code style checks') {
+        configFile = rootProject.file('config/checkstyle/checkstyle.xml')
+        configProperties = [config_loc: rootProject.file("config/checkstyle")]
+        source 'src/main/java'
+        include "**/*.java"
+        exclude "**/gen/**"
+
+        reports {
+            xml.enabled = true
+            html.enabled = true
+        }
+
+        // empty classpath
+        classpath = files()
+    }
+
+    // Ejemplo de configuración https://proandroiddev.com/configuring-android-project-static-code-analysis-tools-b6dd83282921
+    apply plugin: 'pmd'
+    task pmd(type: Pmd, group: "Verification", description: "Inspect sourcecode for bugs") {
+        ruleSetFiles = rootProject.files('config/pmd/pmd.xml')
+        source = fileTree('src/main/java/')
+
+        reports {
+            xml.enabled = false
+            html.enabled = true
+        }
+    }
+
+    apply plugin: "com.github.ben-manes.versions"
+    // Ignora las versiones alpha, beta, milestone de la identificación de nuevas dependencias
+    configurations.all {
+        dependencyUpdates.resolutionStrategy = {
+          componentSelection { rules ->
+            rules.all { ComponentSelection selection ->
+              boolean rejected = ['alpha', 'beta', 'rc', 'cr', 'm', 'b', 'pr'].any { qualifier ->
+                selection.candidate.version ==~ /(?i).*[.-]${qualifier}[.\d-]*/
+              }
+              if (rejected) {
+                selection.reject('Release candidate')
+              }
+            }
+          }
+        }
+    }
+
+    ext {
+        appauthVersion = '0.7.1'
+        appAuthRedirectScheme = 'co.com.mirecarga'
+        butterknifeVersion = '10.2.1'
+        constraintLayout = '1.1.2'
+        daggerVersion = '2.17'
+        facebookVersion = '4.32.0'
+        geoPackageVersion = '2.0.2'
+        gsonVersion = '2.8.5'
+        okioVersion = '1.15.0'
+        okhttp3Version = '3.11.0'
+        retrofitVersion = '2.4.0'
+        rxandroidVersion = '2.1.0'
+        rxjavaVersion = '2.2.1'
+        supportLibVersion = '28.0.0'
+        simpleAuthVersion = '2.1.3'
+        osmdroidVersion = '6.1.6'
+        osmbonuspackVersion = '6.6.0'
+        playServicesVisionVersion = '20.1.0'
+        testRunner = '1.0.2'
+        testEspresso = '3.0.2'
+        zxingVersion = '3.3.3'
+        storeVersion = '4.0.0-alpha04'
+    }
+
+}
+

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jaychang:simpleauth-twitter:2.1.3@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9acf977d27d87f6ed9a04165d4d3fc13/jetified-simpleauth-twitter-2.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9acf977d27d87f6ed9a04165d4d3fc13/jetified-simpleauth-twitter-2.1.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jaychang/simpleauth-twitter/2.1.3/3856f4ec9ba9fa0627608e4f946c5ec62966cce/simpleauth-twitter-2.1.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jaychang/simpleauth-twitter/2.1.3/8a693bcdbdef70ff911796f7a54446654af747b7/simpleauth-twitter-2.1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

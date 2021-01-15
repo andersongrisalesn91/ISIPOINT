@@ -1,0 +1,84 @@
+{
+  "menu": [
+    {
+      "nombre": "Vender",
+        "items": [
+          {
+            "id": 2,
+            "nombre": "Paquetes",
+            "descripcion": "Descripción Paquetes",
+            "icono": "ico_menu_vendedor_paquetes",
+            "clase": "co.com.mirecarga.vendedor.ventapaquetetransito.VentaPaqueteTransitoFragment"
+          },
+          {
+            "id": 3,
+            "nombre": "Tarjetas",
+            "descripcion": "Descripción Tarjetas",
+            "icono": "ico_menu_vendedor_tarjetas",
+            "clase": "co.com.mirecarga.vendedor.ventatarjeta.VentaTarjetaFragment"
+          },
+          {
+            "id": 4,
+            "nombre": "PIN de transito",
+            "descripcion": "Descripción PIN de transito",
+            "icono": "ico_menu_vendedor_pin",
+            "clase": "co.com.mirecarga.vendedor.ventapintransito.VentaPinTransitoFragment"
+          },
+          {
+            "id": 5,
+            "nombre": "Recarga en línea",
+            "descripcion": "Descripción Recarga en línea",
+            "icono": "ico_menu_vendedor_recarga_linea",
+            "clase": "co.com.mirecarga.vendedor.recargaenlinea.RecargaEnLineaFragment"
+          },
+          {
+            "id": 9,
+            "nombre": "Mapa",
+            "descripcion": "Descripción Mapa",
+            "icono": "ico_menu_vendedor_recarga_linea",
+            "clase": "co.com.mirecarga.vendedor.mapa.MapaVendedorFragment"
+          }
+      ]
+    },
+    {
+      "nombre": "Consultar",
+      "items": [
+        {
+          "id": 6,
+          "nombre": "Ventas por vendedor",
+          "descripcion": "Descripción Ventas por vendedor",
+          "icono": "ico_menu_vendedor_ventas_vendedor",
+          "clase": "co.com.mirecarga.vendedor.reportes.VentasPorVendedorFragment"
+        },
+        {
+          "id": 7,
+          "nombre": "Ventas por cliente",
+          "descripcion": "Descripción Ventas por cliente",
+          "icono": "ico_menu_vendedor_ventas_cliente",
+          "clase": "co.com.mirecarga.vendedor.reportes.VentasPorClienteFragment"
+        },
+        {
+          "id": 8,
+          "nombre": "Transacciones de un PIN",
+          "descripcion": "Descripción Transacciones de un PIN",
+          "icono": "ico_menu_vendedor_transacciones_pin",
+          "clase": "co.com.mirecarga.vendedor.reportes.TransaccionesPinFragment"
+        },
+        {
+          "id": 10,
+          "nombre": "Notificaciones",
+          "descripcion": "Descripción notificaiones",
+          "icono": "ic_notifications_none_white_24dp",
+          "clase": "co.com.mirecarga.vendedor.notification.NotificationListFragment"
+        },
+        {
+          "id": 11,
+          "nombre": "Test",
+          "descripcion": "Descripción notificaiones",
+          "icono": "ic_notifications_none_white_24dp",
+          "clase": "co.com.mirecarga.vendedor.test.TestFragment"
+        }
+      ]
+    }
+  ]
+}

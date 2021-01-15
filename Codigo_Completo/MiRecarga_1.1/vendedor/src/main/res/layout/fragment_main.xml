@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/logo"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:contentDescription="@string/titulo_principal"-->
+    <!--        android:src="@drawable/logo" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/texto_hello"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="@string/vendedor_home_texto_hello"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textAppearance="@style/TextoHello" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/texto_usuario_main"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/texto_hello"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:text=""-->
+<!--        android:textAlignment="center"-->
+<!--        android:textAppearance="@style/TextoHello" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/grupos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</RelativeLayout>
